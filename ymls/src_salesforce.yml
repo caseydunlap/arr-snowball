@@ -1,4 +1,4 @@
-version: 1
+version: 2
 
 sources:
   - name: salesforce
@@ -10,8 +10,6 @@ sources:
         description: Account information for customers, such as billing, HHA services, platforms being used etc.
       - name: opportunity
         description: Point-in-time snapshot of Salesforce opportunities
-      - name: opportunity_history
-        description: Historical record of opportunities with a timestamped entry for each modification of an opportunity
       - name: opportunity_line_item
         description: Historical record of opportunities with a timestamped entry for each modification of an opportunity
       - name: record_type

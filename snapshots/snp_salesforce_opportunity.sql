@@ -12,6 +12,6 @@
 
 select * 
 , current_timestamp() as dbt_snapshot_at
-from {{ source('salesforce', 'opportunity') }}
+from {{source('salesforce','opportunity')}}
 
 {% endsnapshot %}
