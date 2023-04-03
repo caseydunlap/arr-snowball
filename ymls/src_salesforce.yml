@@ -13,10 +13,10 @@ sources:
       - name: opportunity_line_item
         description: Historical record of opportunities with a timestamped entry for each modification of an opportunity
       - name: record_type
-        description: Business unit informaiton, specific to HHA
+        description: Salesforce object record types
       - name: revenue_modification_c
-        description: Assess which of the opportunities are terminated
+        description: Terminations,Writeoffs,Deactivations/Downgrades
       - name: user
-        description: Salesforce users including sales reps
+        description: Salesforce usernames
       - name: user_role
         description: Salesforce user roles for each user
