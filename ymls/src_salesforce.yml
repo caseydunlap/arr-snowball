@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: salesforce
+    database: pc_fivetran_db
+    schema: salesforce
+    description: Database containing all data sources ingested via Fivetran and taking the salesforce schema
+    tables:
+      - name: account
+        description: Account information for customers, such as billing, HHA services, platforms being used etc.
+      - name: opportunity
+        description: Point-in-time snapshot of Salesforce opportunities
+      - name: opportunity_line_item
+        description: Historical record of opportunities with a timestamped entry for each modification of an opportunity
+      - name: record_type
+        description: Business unit informaiton, specific to HHA
+      - name: revenue_modification_c
+        description: Assess which of the opportunities are terminated
+      - name: user
+        description: Salesforce users including sales reps
+      - name: user_role
+        description: Salesforce user roles for each user
